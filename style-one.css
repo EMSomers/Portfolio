@@ -1,0 +1,759 @@
+/* UPDATE
+
+ROOT elements - fix fonts; colours; standardize size
+
+Media Queries - 768px, 640px, 480px
+              - Color Preference - Dark Mode
+
+
+
+- Global Stylings First 
+    - Nav Bar; Body size + colour; Footer
+
+- Individual Pages 
+
+- Media Queries
+
+
+*/
+
+:root {
+    /* General font Styles */
+    --title-font: "Lobster Two", sans-serif;
+    --title-size-one: 60px;
+    --body-font: "Molengo", sans-serif;
+
+    /* General Colour Styles */
+    --cream: #F9F9F4;
+    --soft-green: #CDE8D0;
+    --soft-teal: #55808E;
+    --light-gray: #D9D9D9;
+    --black: #000000;
+
+
+
+}
+
+.big-wrapper {
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    width: 95%;
+    margin: 0 auto;
+    background-color: var(--cream);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--title-font);
+    color: var(--soft-teal);
+}
+
+h2 {
+    font-size: var(--title-size-one);
+}
+
+p {
+    font-family: var(--body-font);
+    color: var(--black);
+}
+
+img {
+    border-radius: 20px;
+    border: 5px solid;
+}
+
+/* Header Styling Below  */
+
+ul {
+    font-family: var(--body-font);
+    display: flex;
+    justify-content: center;
+    margin: 0% 5%;
+    list-style: none;
+}
+
+li {
+    padding: 2%;
+    font-size: 20px;
+}
+
+a {
+    color: var(--soft-teal);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--black);
+    text-decoration: none;
+}
+
+
+/* Footer Stylings go up here because it is universal across all the pages!  */
+
+footer {
+    background-color: var(--soft-green);
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+}
+
+
+footer h3 {
+    color: var(--soft-green);
+    font-size: 30px;
+
+}
+
+.big-footer {
+    display: flex;
+    justify-content: center;
+    margin: 5% auto 5% auto;
+}
+
+.section-five {
+    width: 30%;
+
+}
+
+.section-five article {
+    background-color: var(--soft-teal);
+    color: var(--soft-green);
+    border-radius: 20px;
+    text-align: center;
+    width: 50%;
+    padding: 10%;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--soft-teal);
+    color: var(--cream);
+    border-radius: 20px;
+    text-align: center;
+    width: 15%;
+    padding: 3% 5%;
+}
+
+
+.footer img {
+    width: 40%;
+
+}
+
+.footer img:hover {
+    border: none;
+}
+
+input {
+    border-radius: 20px;
+    height: 20px;
+    margin: 5%;
+    text-indent: 5%;
+    border-style: none;
+}
+
+button {
+    border-radius: 10px;
+    background-color: var(--soft-green);
+    border-style: none;
+    height: 40px;
+}
+
+
+
+/* Landing Page  Main Styling Below */
+
+/* Section One */
+
+.section-one {
+    display: flex;
+    justify-content: center;
+}
+
+.section-one img {
+    width: 40%;
+    border-radius: 55%;
+    border: 3px dotted var(--soft-teal);
+    margin: 5% 5% 2% 5%;
+}
+
+
+.section-one h2 {
+    color: black;
+    font-size: 80px;
+    margin-top: 45%;
+    margin-bottom: 5%;
+}
+
+.section-one h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* Quote Styling */
+
+.quote {
+    color: var(--soft-teal);
+    font-family: lobster-two-regular-italic;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+
+/* Section Two Web Development Styling*/
+
+
+.section-two {
+    background-color: var(--soft-teal);
+}
+
+.section-two section {
+    text-align: left;
+    padding-top: 2%;
+    margin-left: 5%;
+}
+
+.section-two h2 {
+    color: var(--soft-green);
+    margin-bottom: 0;
+}
+
+.section-two img {
+    border-color: var(--soft-green);
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.section-two p {
+    color: var(--cream);
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+    margin: 3% auto 0% auto;
+    padding-bottom: 5%;
+}
+
+
+/* section three Design Styling  */
+
+.section-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+.section-three p {
+    font-size: 20px;
+}
+
+.section-three article {
+    width: 40%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.section-three section {
+    margin-bottom: 5%;
+    margin-right: 10%;
+}
+
+.section-three img {
+
+    border-color: var(--soft-teal);
+    max-height: 250px;
+    max-width: 70%;
+    margin: 3%;
+}
+
+/* This image did not want to be centered even with margin-left/right: auto;  */
+#sacred-plants {
+    width: 80%;
+    margin-left: 12%;
+}
+
+
+/* Section Four Styling  */
+
+.section-four {
+    background-color: var(--soft-teal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-four h2 {
+    color: var(--soft-green);
+    text-align: right;
+}
+
+.section-four p {
+    color: var(--cream);
+}
+
+.section-four article {
+    width: 40%;
+    margin-left: 8%;
+    margin-right: 15%;
+    text-align: right;
+}
+
+.section-four section {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 10%;
+
+}
+
+
+.section-four img {
+    border-color: var(--soft-green);
+    max-width: 35%;
+    margin: 1% 1% 1% 5%;
+}
+
+#serpens {
+    border-color: var(--soft-green);
+    max-width: 55%;
+    margin-left: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Web Development Page Styling - Will be universal across all pages highlighting work */
+
+#big-wrapper-webdev {
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    width: 95%;
+    margin: 0 auto;
+    background-color: var(--cream);
+}
+
+#big-wrapper-webdev footer {
+    background-color: var(--cream);
+}
+
+
+.title {
+    display: block;
+    justify-content: right;
+
+}
+
+.title h2 {
+    color: var(--black);
+    font-size: 80px;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 0%;
+}
+
+.title h3 {
+    color: var(--soft-teal);
+    font-size: 40px;
+    font-family: "Lobster Two", sans-serif;
+    font-style: italic;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 0%;
+}
+
+/* Pineapple Island Styling*/
+
+.pineapple-island {
+    display: flex;
+    align-content: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.pineapple-island img {
+    width: 90%;
+    border-color: var(--soft-green);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.pineapple-island article {
+    margin-left: 5%;
+    padding-top: 5%;
+}
+
+/* HTML Section - would like the content area to match the size of the images better Through pineapple-island-html and pineapple-island-css*/
+
+.pinapple-island-html {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* For some reason this border colour is different than anything else using this colour */
+.pinapple-island-html img {
+    width: 90%;
+    border-color: var(--soft-green);
+}
+
+#pineapple-island-html-text {
+    font-size: 20px;
+    width: 60%;
+
+}
+
+/* Pineapple Island CSS Section */
+
+.pinepple-island-css {
+    display: flex;
+    margin: 5%;
+}
+
+.pinepple-island-css section {
+    width: 40%;
+    margin: 1%;
+}
+
+.pinepple-island-css img {
+    width: 98%;
+    border-color: var(--soft-green);
+    margin-left: 5%;
+}
+
+.pinepple-island-css p {
+    font-size: 20px;
+    margin-top: 0%;
+    text-align: right;
+}
+
+/* WebDev Portfolio section Styling */
+
+#webdev-portfolio-heading {
+    margin-left: 5%;
+}
+
+#portfolio-webdev {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+}
+
+#portfolio-webdev img {
+    border-color: var(--soft-teal);
+    width: 75%;
+}
+
+#portfolio-webdev section {
+    width: 60%;
+    margin-top: 5%;
+    background-color: var(--soft-teal);
+    border: 5px solid var(--soft-green);
+    border-radius: 20px;
+    color: var(--cream);
+    font-size: 20px;
+    padding: 3%;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* About Page Styling */
+
+
+.about {
+    background-color: var(--soft-teal);
+    color: var(--cream);
+    border-radius: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about p {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: justify;
+}
+
+
+
+/* Artwork Styling */
+/* Note the Distance between the List Items on this page has a large gap between Home + About */
+
+.big-wrapper-artwork {
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    width: 95%;
+    margin: 0 auto;
+    background-color: var(--soft-teal);
+}
+
+.big-wrapper-artwork a {
+    color: var(--soft-green);
+}
+
+.big-wrapper-artwork h2 {
+    color: var(--cream);
+}
+
+.big-wrapper-artwork h3 {
+    color: var(--soft-green);
+}
+
+.big-wrapper-artwork p {
+    color: var(--black);
+}
+
+/* Adjusting Footing Colours */
+.big-wrapper-artwork footer {
+    background-color: var(--soft-teal);
+}
+
+.big-wrapper-artwork footer h3 {
+    color: var(--soft-teal);
+}
+
+.big-wrapper-artwork .section-five article {
+    background-color: var(--soft-green);
+}
+
+.big-wrapper-artwork .footer {
+    background-color: var(--soft-green);
+}
+
+
+/* Main Styling for Artwork */
+
+
+.artwork {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    text-align: justify;
+    width: 75%;
+    background-color: var(--soft-green);
+    padding: 5%;
+    border-radius: 20px;
+
+}
+
+.artwork-images {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.artwork-images img {
+    border-color: var(--cream);
+    margin: 3%;
+
+}
+
+
+
+
+
+/* Design Styling */
+
+
+.big-wrapper-design {
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    width: 95%;
+    margin: 0 auto;
+    background-color: var(--cream);
+
+}
+
+.big-wrapper-design h2 {
+    font-size: 50px;
+}
+
+.big-wrapper-design footer {
+    background-color: var(--cream);
+}
+
+/* Sacred Plants Section */
+
+#sacred-plants-title {
+    margin: 5% 0% 2% 5%
+}
+
+.sacred-plants {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 5%;
+
+}
+
+.sacred-plants article {
+    width: 40%;
+    font-size: 15px;
+    margin-top: 8%;
+    padding-right: 5%;
+}
+
+.sacred-plants ul {
+    display: block;
+    text-align: left;
+    padding: 0;
+}
+
+.sacred-plants li {
+    font-size: 15px;
+}
+
+#sacred-plants-large {
+    width: 90%;
+    border-color: var(--soft-teal);
+}
+
+
+/* chimmnising hydroponics section */
+
+#chimmnising-title {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.chimmnising {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.chimmnising img {
+    width: 80%;
+    border-color: var(--soft-teal);
+}
+
+
+#chimmnising-text {
+    background-color: var(--soft-green);
+    border: 5px solid var(--soft-teal);
+    border-radius: 20px;
+    text-align: justify;
+    padding: 2%;
+}
+
+/* Metis Mawkawsins */
+
+.metismawks {
+    display: flex;
+    margin-top: 5%;
+}
+
+#metis-text {
+    text-align: justify;
+    padding: 2%;
+    margin: 2% 5% 0% 5%;
+}
+
+#metis-image {
+    width: 90%;
+    border-color: var(--soft-teal);
+}
+
+
+
+/* portfolio-design section */
+
+.portfolio {
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portfolio-heading {
+    text-align: left;
+    margin-right: 80%;
+}
+
+#portfolio-text {
+    width: 70%;
+    background-color: var(--soft-green);
+    border: 5px solid var(--soft-teal);
+    border-radius: 20px;
+    margin-top: 1%;
+    padding: 3%;
+}
+
+#portfolio-wireframe {
+    max-height: 500px;
+    border-color: var(--soft-teal);
+}
