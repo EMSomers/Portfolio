@@ -1,0 +1,767 @@
+/* Things I learnt while working on this project
+- I need help to resize images appropriately
+    ie. If you were to upload a photo from your phone to shopify it gets resized into the perfect square; what I am doing means that the different sized images aren't all exactly the same in the end - it could also be from using screenshots and oddly cropped images. But definitely need some help to clarify what I am doing wrong there!
+    
+- Taking the High-fidelity prototype and blocking out sections to make classes specific to these areas would be much much much easier than what I have done! I have truly learnt my lesson on classes vs. id!
+
+-  Part way through some of my hex colour codes turned red (Not all of them, just some of them!) they all still worked, but I will need to look up why this is happening later on 
+
+- If you have a TON of css coding there are awesome little grey markers in the scroll bar to help you jump to sections!
+
+- This much coding in the short window I gave myself is probably a bit too much and in the future with a bit more planning things could be much more smoothly! Most likely leading to less worK!
+
+- I do believe I started changing font sizes part way through which is unnecessary (really need to remember to plan my work and work my plan!)
+
+
+- I am sure there are other things that we learnt in class that I could have included; it would be good to review the slides from class and re-assess what I could improve! 
+*/
+
+
+/* 
+Google Fonts Info
+USE FOR CONTENT TEXT
+.molengo-regular {
+  font-family: "Molengo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+USE FOR HEADINGS
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+Plus--
+.lobster-two-regular-italic 
+.lobster-two-bold 
+.lobster-two-bold-italic 
+
+
+*/
+
+.big-wrapper,
+.big-wrapper-artwork,
+.big-wrapper-design {
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    width: 95%;
+    margin: 0 auto;
+    background-color: #CDE8D0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Lobster Two", sans-serif;
+    color: #55808E;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+p {
+    font-family: "Molengo", sans-serif;
+}
+
+img {
+    border-radius: 20px;
+    border: 5px solid;
+}
+
+/* Header Styling Below  */
+
+ul {
+    font-family: "Molengo", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0% 5%;
+    list-style: none;
+}
+
+li {
+    padding: 2%;
+    font-size: 20px;
+}
+
+a {
+    color: #55808E;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Footer Stylings go up here because it is universal across all the pages!  */
+
+footer {
+    background-color: #CDE8D0;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+}
+
+
+footer h3 {
+    color: #CDE8D0;
+    font-size: 30px;
+
+}
+
+.big-footer {
+    display: flex;
+    justify-content: center;
+    margin: 5% auto 5% auto;
+}
+
+.section-five {
+    width: 30%;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.section-five article {
+    background-color: #55808E;
+    color: #F9F9F4;
+    border-radius: 20px;
+    text-align: center;
+    width: 50%;
+    padding: 10%;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #55808E;
+    color: #F9F9F4;
+    border-radius: 20px;
+    text-align: center;
+    width: 15%;
+    padding: 3% 5%;
+}
+
+
+.footer img {
+    width: 40%;
+
+}
+
+.footer img:hover {
+    border: none;
+}
+
+input {
+    border-radius: 20px;
+    height: 20px;
+    margin: 5%;
+    text-indent: 5%;
+    border-style: none;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #CDE8D0;
+    border-style: none;
+    height: 40px;
+}
+
+
+
+/* Landing Page  Main Styling Below */
+
+/* Section One */
+
+.section-one {
+    display: flex;
+    justify-content: center;
+}
+
+.section-one img {
+    width: 40%;
+    border-radius: 55%;
+    border: 3px dotted #55808E;
+    margin: 5% 5% 2% 5%;
+}
+
+
+.section-one h2 {
+    color: black;
+    font-size: 80px;
+    margin-top: 45%;
+    margin-bottom: 5%;
+}
+
+.section-one h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* Quote Styling */
+
+.quote {
+    color: #55808E;
+    font-family: lobster-two-regular-italic;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+
+/* Section Two Web Development Styling*/
+
+
+.section-two {
+    background-color: #55808E;
+}
+
+.section-two section {
+    text-align: left;
+    padding-top: 2%;
+    margin-left: 5%;
+}
+
+.section-two h2 {
+    color: #CDE8D0;
+    margin-bottom: 0;
+}
+
+.section-two img {
+    border-color: #CDE8D0;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.section-two p {
+    color: #F9F9F4;
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+    margin: 3% auto 0% auto;
+    padding-bottom: 5%;
+}
+
+
+/* section three Design Styling  */
+
+.section-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+.section-three p {
+    font-size: 20px;
+}
+
+.section-three article {
+    width: 40%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.section-three section {
+    margin-bottom: 5%;
+    margin-right: 10%;
+}
+
+.section-three img {
+
+    border-color: #55808E;
+    max-height: 250px;
+    max-width: 70%;
+    margin: 3%;
+}
+
+/* This image did not want to be centered even with margin-left/right: auto;  */
+#sacred-plants {
+    width: 80%;
+    margin-left: 12%;
+}
+
+
+/* Section Four Styling  */
+
+.section-four {
+    background-color: #55808E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-four h2 {
+    color: #CDE8D0;
+    text-align: right;
+}
+
+.section-four p {
+    color: #F9F9F4;
+}
+
+.section-four article {
+    width: 40%;
+    margin-left: 8%;
+    margin-right: 15%;
+    text-align: right;
+}
+
+.section-four section {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 10%;
+
+}
+
+
+.section-four img {
+    border-color: #CDE8D0;
+    max-width: 35%;
+    margin: 1% 1% 1% 5%;
+}
+
+#serpens {
+    border-color: #CDE8D0;
+    max-width: 55%;
+    margin-left: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Web Development Page Styling - Will be universal across all pages highlighting work */
+
+#big-wrapper-webdev {
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    width: 95%;
+    margin: 0 auto;
+    background-color: #F9F9F4;
+}
+
+#big-wrapper-webdev footer {
+    background-color: #F9F9F4;
+}
+
+
+.title {
+    display: block;
+    justify-content: right;
+
+}
+
+.title h2 {
+    color: black;
+    font-size: 80px;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 0%;
+}
+
+.title h3 {
+    color: #55808E;
+    font-size: 40px;
+    font-family: "Lobster Two", sans-serif;
+    font-style: italic;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 0%;
+}
+
+/* Pineapple Island Styling*/
+
+.pineapple-island {
+    display: flex;
+    align-content: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.pineapple-island img {
+    width: 90%;
+    border-color: #CDE8D0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.pineapple-island article {
+    margin-left: 5%;
+    padding-top: 5%;
+}
+
+/* HTML Section - would like the content area to match the size of the images better Through pineapple-island-html and pineapple-island-css*/
+
+.pinapple-island-html {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* For some reason this border colour is different than anything else using this colour */
+.pinapple-island-html img {
+    width: 90%;
+    border-color: #CDE8D0;
+}
+
+#pineapple-island-html-text {
+    font-size: 20px;
+    width: 60%;
+
+}
+
+/* Pineapple Island CSS Section */
+
+.pinepple-island-css {
+    display: flex;
+    margin: 5%;
+}
+
+.pinepple-island-css section {
+    width: 40%;
+    margin: 1%;
+}
+
+.pinepple-island-css img {
+    width: 98%;
+    border-color: #CDE8D0;
+    margin-left: 5%;
+}
+
+.pinepple-island-css p {
+    font-size: 20px;
+    margin-top: 0%;
+    text-align: right;
+}
+
+/* WebDev Portfolio section Styling */
+
+#webdev-portfolio-heading {
+    margin-left: 5%;
+}
+
+#portfolio-webdev {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+}
+
+#portfolio-webdev img {
+    border-color: #55808E;
+    width: 75%;
+}
+
+#portfolio-webdev section {
+    width: 60%;
+    margin-top: 5%;
+    background-color: #55808E;
+    border: 5px solid #CDE8D0;
+    border-radius: 20px;
+    color: #F9F9F4;
+    font-size: 20px;
+    padding: 3%;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* About Page Styling */
+
+
+.about {
+    background-color: #55808E;
+    color: #F9F9F4;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about p {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: justify;
+}
+
+
+
+/* Artwork Styling */
+/* Note the Distance between the List Items on this page has a large gap between Home + About */
+
+.big-wrapper-artwork {
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    width: 95%;
+    margin: 0 auto;
+    background-color: #55808E;
+}
+
+.big-wrapper-artwork a {
+    color: #CDE8D0;
+}
+
+.big-wrapper-artwork h2 {
+    color: #F9F9F4;
+}
+
+.big-wrapper-artwork h3 {
+    color: #CDE8D0;
+}
+
+.big-wrapper-artwork p {
+    color: black;
+}
+
+/* Adjusting Footing Colours */
+.big-wrapper-artwork footer {
+    background-color: #55808E;
+}
+
+.big-wrapper-artwork footer h3 {
+    color: #55808E;
+}
+
+.big-wrapper-artwork .section-five article {
+    background-color: #CDE8D0;
+}
+
+.big-wrapper-artwork .footer {
+    background-color: #CDE8D0;
+}
+
+
+/* Main Styling for Artwork */
+
+
+.artwork {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    text-align: justify;
+    width: 75%;
+    background-color: #CDE8D0;
+    padding: 5%;
+    border-radius: 20px;
+
+}
+
+.artwork-images {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.artwork-images img {
+    border-color: #F9F9F4;
+    margin: 3%;
+
+}
+
+
+
+
+
+/* Design Styling */
+
+
+.big-wrapper-design {
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    width: 95%;
+    margin: 0 auto;
+    background-color: #F9F9F4;
+
+}
+
+.big-wrapper-design h2 {
+    font-size: 50px;
+}
+
+.big-wrapper-design footer {
+    background-color: #F9F9F4;
+}
+
+/* Sacred Plants Section */
+
+#sacred-plants-title {
+    margin: 5% 0% 2% 5%
+}
+
+.sacred-plants {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 5%;
+
+}
+
+.sacred-plants article {
+    width: 40%;
+    font-size: 15px;
+    margin-top: 8%;
+    padding-right: 5%;
+}
+
+.sacred-plants ul {
+    display: block;
+    text-align: left;
+    padding: 0;
+}
+
+.sacred-plants li {
+    font-size: 15px;
+}
+
+#sacred-plants-large {
+    width: 90%;
+    border-color: #55808E;
+}
+
+
+/* chimmnising hydroponics section */
+
+#chimmnising-title {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.chimmnising {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.chimmnising img {
+    width: 80%;
+    border-color: #55808E;
+}
+
+
+#chimmnising-text {
+    background-color: #CDE8D0;
+    border: 5px solid #55808E;
+    border-radius: 20px;
+    text-align: justify;
+    padding: 2%;
+}
+
+/* Metis Mawkawsins */
+
+.metismawks {
+    display: flex;
+    margin-top: 5%;
+}
+
+#metis-text {
+    text-align: justify;
+    padding: 2%;
+    margin: 2% 5% 0% 5%;
+}
+
+#metis-image {
+    width: 90%;
+    border-color: #55808E;
+}
+
+
+
+/* portfolio-design section */
+
+.portfolio {
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portfolio-heading {
+    text-align: left;
+    margin-right: 80%;
+}
+
+#portfolio-text {
+    width: 70%;
+    background-color: #CDE8D0;
+    border: 5px solid #55808E;
+    border-radius: 20px;
+    margin-top: 1%;
+    padding: 3%;
+}
+
+#portfolio-wireframe {
+    max-height: 500px;
+    border-color: #55808E;
+}
